@@ -21,8 +21,8 @@ public class Day01 {
     }
 
     public int getFloor(String s) {
-        var ups = (int)(s.chars().filter(x -> x == '(').count());
-        var downs = (int)(s.chars().filter(x -> x == ')').count());
+        var ups = (int) (s.chars().filter(x -> x == '(').count());
+        var downs = (int) (s.chars().filter(x -> x == ')').count());
         return ups - downs;
     }
 

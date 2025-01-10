@@ -74,12 +74,12 @@ public class Day02 {
             int[] sides = { this.length, this.width, this.height };
 
             var shortestSides = Arrays.stream(sides)
-                .sorted()
-                .limit(2)
-                .toArray();
+                    .sorted()
+                    .limit(2)
+                    .toArray();
 
             return shortestSides[0] + shortestSides[0] + shortestSides[1] + shortestSides[1]
-                + (this.length * this.width * this.height);
+                    + (this.length * this.width * this.height);
         }
     }
 }
