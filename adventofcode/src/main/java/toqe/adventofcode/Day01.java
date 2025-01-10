@@ -1,9 +1,7 @@
-package toqe.adventofcode.Day01;
-
-import toqe.adventofcode.InputFileHelper;
+package toqe.adventofcode;
 
 public class Day01 {
-    public void Run() throws Exception {
+    public void run() throws Exception {
         // part 1
         assert getFloor("(())") == 0;
         assert getFloor("()()") == 0;
