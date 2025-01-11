@@ -37,7 +37,7 @@ java {
 
 application {
     // Define the main class for the application.
-    mainClass = "toqe.adventofcode.MainKt"
+    mainClass = "toqe.adventofcode.AppKt"
 }
 
 tasks.named<Test>("test") {
