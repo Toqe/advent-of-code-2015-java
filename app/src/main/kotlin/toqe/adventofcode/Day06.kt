@@ -1,4 +1,4 @@
-package toqe.adventofcode;
+package toqe.adventofcode
 
 class Day06 {
     val regex = "(turn off|turn on|toggle) ([0-9]+),([0-9]+) through ([0-9]+),([0-9]+)".toRegex()
