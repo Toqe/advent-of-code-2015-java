@@ -22,6 +22,9 @@ buildNumber.properties
 # Ignore Gradle build output directory
 build
 
+# Ignore IntelliJ configuration and build output directories
+bin
+.idea
 
 input.txt
 
