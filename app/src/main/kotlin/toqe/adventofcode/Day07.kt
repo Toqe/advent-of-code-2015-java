@@ -48,7 +48,7 @@ class Day07 {
         } else if (gate.operator == Operator.EQ) {
             wireValue = getWireValue(gate.op1!!)
         } else {
-            var x1 = if (gate.opValue1 == null) getWireValue(gate.op1!!) else gate.opValue1
+            val x1 = if (gate.opValue1 == null) getWireValue(gate.op1!!) else gate.opValue1
 
             wireValue =
                     when (gate.operator) {
