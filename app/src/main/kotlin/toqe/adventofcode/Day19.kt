@@ -41,5 +41,22 @@ class Day19 {
         }
 
         println(generatedMolecules.size)
+
+        // part 2 - really bad as a general solution, but works...
+        var count = 0
+        var m = inputMolecule
+        val replacementStrings = inputSplitted[0].split('\n').map{ it.split(" => ") }
+
+        while (m != "e") {
+            for (r in replacementStrings) {
+                if (m.contains(r[1])) {
+                    val index = m.indexOf(r[1])
+                    m = m.substring(0, index) + r[0] + m.substring(index + r[1].length)
+                    count++
+                }
+            }
+        }
+
+        println(count)
     }
 }
