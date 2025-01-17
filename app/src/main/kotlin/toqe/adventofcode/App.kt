@@ -1,5 +1,5 @@
 package toqe.adventofcode
 
 fun main() {
-    Day21().run()
+    Day22().run()
 }
